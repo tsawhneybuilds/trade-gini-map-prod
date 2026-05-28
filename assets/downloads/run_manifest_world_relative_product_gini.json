@@ -1,0 +1,527 @@
+{
+  "benchmark_sample": "world_broad",
+  "command": "python3 scripts/run_world_relative_product_gini.py --country-sample rd2_countries --benchmark-sample world_broad --start-year 1988 --end-year 2024 --download-missing --fresh",
+  "country_sample": "rd2_countries",
+  "created_at_utc": "2026-05-27T20:25:04+00:00",
+  "diagnostics": {
+    "benchmark_product_duplicate_keys": {
+      "duplicate_reporter_year_product_keys": 0,
+      "max_duplicate_rows_per_key": 0
+    },
+    "hs6_999999_rows_panel": 0,
+    "max_zero_weight_country_export_share": 0.025094723336062857,
+    "total_missing_benchmark_products": 0,
+    "total_negative_leave_one_out_products": 0,
+    "world_product_duplicate_year_product_keys": {
+      "duplicate_reporter_year_product_keys": 0,
+      "max_duplicate_rows_per_key": 0
+    }
+  },
+  "end_year": 2024,
+  "excluded_hs6_codes": [
+    "999999"
+  ],
+  "flow": "Exports",
+  "outputs": {
+    "appendix_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_weighted_product_gini_appendix.csv",
+    "classification_diagnostics_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_relative_product_gini_classification_diagnostics.csv",
+    "diagnostics_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_relative_product_gini_diagnostics.csv",
+    "latest_rankings_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_relative_product_gini_latest_rankings.csv",
+    "main_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_relative_product_gini_all_years.csv",
+    "processed_panel": "data/processed/samples/rd2_countries/world_relative_product_gini_panel.parquet",
+    "yearly_summary_csv": "results/samples/rd2_countries/world_relative_product_gini_tables/world_relative_product_gini_yearly_summary.csv"
+  },
+  "partial_stats": {
+    "benchmark": {
+      "leaf_rows_processed": 542448856,
+      "partial_files": 5103,
+      "partial_rows_written": 12347220,
+      "raw_files": 5103,
+      "sample": "world_broad",
+      "statuses": {
+        "empty": 14,
+        "written": 5089
+      }
+    },
+    "country": {
+      "leaf_rows_processed": 373066249,
+      "partial_files": 1898,
+      "partial_rows_written": 6729427,
+      "raw_files": 1898,
+      "sample": "rd2_countries",
+      "statuses": {
+        "empty": 6,
+        "written": 1892
+      }
+    }
+  },
+  "raw_coverage": {
+    "benchmark_raw_coverage": {
+      "available_expected_keys": 5103,
+      "by_year": [
+        {
+          "available": 11,
+          "expected": 11,
+          "missing": 0,
+          "year": 1988
+        },
+        {
+          "available": 25,
+          "expected": 25,
+          "missing": 0,
+          "year": 1989
+        },
+        {
+          "available": 30,
+          "expected": 30,
+          "missing": 0,
+          "year": 1990
+        },
+        {
+          "available": 40,
+          "expected": 40,
+          "missing": 0,
+          "year": 1991
+        },
+        {
+          "available": 54,
+          "expected": 54,
+          "missing": 0,
+          "year": 1992
+        },
+        {
+          "available": 68,
+          "expected": 68,
+          "missing": 0,
+          "year": 1993
+        },
+        {
+          "available": 94,
+          "expected": 94,
+          "missing": 0,
+          "year": 1994
+        },
+        {
+          "available": 108,
+          "expected": 108,
+          "missing": 0,
+          "year": 1995
+        },
+        {
+          "available": 122,
+          "expected": 122,
+          "missing": 0,
+          "year": 1996
+        },
+        {
+          "available": 131,
+          "expected": 131,
+          "missing": 0,
+          "year": 1997
+        },
+        {
+          "available": 130,
+          "expected": 130,
+          "missing": 0,
+          "year": 1998
+        },
+        {
+          "available": 142,
+          "expected": 142,
+          "missing": 0,
+          "year": 1999
+        },
+        {
+          "available": 158,
+          "expected": 158,
+          "missing": 0,
+          "year": 2000
+        },
+        {
+          "available": 162,
+          "expected": 162,
+          "missing": 0,
+          "year": 2001
+        },
+        {
+          "available": 163,
+          "expected": 163,
+          "missing": 0,
+          "year": 2002
+        },
+        {
+          "available": 165,
+          "expected": 165,
+          "missing": 0,
+          "year": 2003
+        },
+        {
+          "available": 168,
+          "expected": 168,
+          "missing": 0,
+          "year": 2004
+        },
+        {
+          "available": 168,
+          "expected": 168,
+          "missing": 0,
+          "year": 2005
+        },
+        {
+          "available": 170,
+          "expected": 170,
+          "missing": 0,
+          "year": 2006
+        },
+        {
+          "available": 172,
+          "expected": 172,
+          "missing": 0,
+          "year": 2007
+        },
+        {
+          "available": 171,
+          "expected": 171,
+          "missing": 0,
+          "year": 2008
+        },
+        {
+          "available": 171,
+          "expected": 171,
+          "missing": 0,
+          "year": 2009
+        },
+        {
+          "available": 173,
+          "expected": 173,
+          "missing": 0,
+          "year": 2010
+        },
+        {
+          "available": 172,
+          "expected": 172,
+          "missing": 0,
+          "year": 2011
+        },
+        {
+          "available": 170,
+          "expected": 170,
+          "missing": 0,
+          "year": 2012
+        },
+        {
+          "available": 172,
+          "expected": 172,
+          "missing": 0,
+          "year": 2013
+        },
+        {
+          "available": 168,
+          "expected": 168,
+          "missing": 0,
+          "year": 2014
+        },
+        {
+          "available": 169,
+          "expected": 169,
+          "missing": 0,
+          "year": 2015
+        },
+        {
+          "available": 171,
+          "expected": 171,
+          "missing": 0,
+          "year": 2016
+        },
+        {
+          "available": 172,
+          "expected": 172,
+          "missing": 0,
+          "year": 2017
+        },
+        {
+          "available": 169,
+          "expected": 169,
+          "missing": 0,
+          "year": 2018
+        },
+        {
+          "available": 166,
+          "expected": 166,
+          "missing": 0,
+          "year": 2019
+        },
+        {
+          "available": 163,
+          "expected": 163,
+          "missing": 0,
+          "year": 2020
+        },
+        {
+          "available": 163,
+          "expected": 163,
+          "missing": 0,
+          "year": 2021
+        },
+        {
+          "available": 160,
+          "expected": 160,
+          "missing": 0,
+          "year": 2022
+        },
+        {
+          "available": 158,
+          "expected": 158,
+          "missing": 0,
+          "year": 2023
+        },
+        {
+          "available": 134,
+          "expected": 134,
+          "missing": 0,
+          "year": 2024
+        }
+      ],
+      "expected_keys": 5103,
+      "missing_examples": [],
+      "missing_keys": 0
+    },
+    "country_raw_coverage": {
+      "available_expected_keys": 1898,
+      "by_year": [
+        {
+          "available": 8,
+          "expected": 8,
+          "missing": 0,
+          "year": 1988
+        },
+        {
+          "available": 15,
+          "expected": 15,
+          "missing": 0,
+          "year": 1989
+        },
+        {
+          "available": 16,
+          "expected": 16,
+          "missing": 0,
+          "year": 1990
+        },
+        {
+          "available": 19,
+          "expected": 19,
+          "missing": 0,
+          "year": 1991
+        },
+        {
+          "available": 27,
+          "expected": 27,
+          "missing": 0,
+          "year": 1992
+        },
+        {
+          "available": 30,
+          "expected": 30,
+          "missing": 0,
+          "year": 1993
+        },
+        {
+          "available": 41,
+          "expected": 41,
+          "missing": 0,
+          "year": 1994
+        },
+        {
+          "available": 46,
+          "expected": 46,
+          "missing": 0,
+          "year": 1995
+        },
+        {
+          "available": 50,
+          "expected": 50,
+          "missing": 0,
+          "year": 1996
+        },
+        {
+          "available": 51,
+          "expected": 51,
+          "missing": 0,
+          "year": 1997
+        },
+        {
+          "available": 49,
+          "expected": 49,
+          "missing": 0,
+          "year": 1998
+        },
+        {
+          "available": 54,
+          "expected": 54,
+          "missing": 0,
+          "year": 1999
+        },
+        {
+          "available": 59,
+          "expected": 59,
+          "missing": 0,
+          "year": 2000
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2001
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2002
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2003
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2004
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2005
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2006
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2007
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2008
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2009
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2010
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2011
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2012
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2013
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2014
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2015
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2016
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2017
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2018
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2019
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2020
+        },
+        {
+          "available": 60,
+          "expected": 60,
+          "missing": 0,
+          "year": 2021
+        },
+        {
+          "available": 59,
+          "expected": 59,
+          "missing": 0,
+          "year": 2022
+        },
+        {
+          "available": 58,
+          "expected": 58,
+          "missing": 0,
+          "year": 2023
+        },
+        {
+          "available": 56,
+          "expected": 56,
+          "missing": 0,
+          "year": 2024
+        }
+      ],
+      "expected_keys": 1898,
+      "missing_examples": [],
+      "missing_keys": 0
+    }
+  },
+  "row_counts": {
+    "benchmark_product": 12347220,
+    "panel": 1878,
+    "world_product": 201829
+  },
+  "start_year": 1988,
+  "status": "complete"
+}
